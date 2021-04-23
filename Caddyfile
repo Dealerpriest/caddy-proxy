@@ -7,8 +7,16 @@
 # 	header Connection *Upgrade*
 # 	header Upgrade websocket
 # }
+{
+  admin off
+}
 
-example.com{
-  reverse_proxy xxx.xxx.xxx.xxx
+stopmetsyn.testyta.se {
+  reverse_proxy 10.10.108.85
+  log
+}
+
+stopmetsyn.com {
+  respond "Welcome to the cool place!!!"
   log
 }
